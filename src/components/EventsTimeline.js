@@ -11,26 +11,25 @@ const EventsTimeline = (props) => {
       [styles[props.color]]: props.color,
     })}>
       <div className={styles.title}>
-        {icon && <div className={styles.icon}>
-          <i className={`fa fa-${icon}`} />
-        </div>
-        }
+        {icon && <div className={styles.icon}>{icon}</div>}
         <span>{title}</span>
       </div>
       {data && data.map((item) => <EventsTimelineItem
-        key={item.year}
-        year={item.year}
+        key={item.date}
+        content={item.content}
+        label={item.label}
+        location={item.location}
         title={item.title}
-        content={item.content} />)}
+        date={item.date} />)}
     </div>
   );
 };
 
 EventsTimeline.propTypes = {
-  title: PropTypes.string,
-  icon: PropTypes.string,
   color: PropTypes.string,
   data: PropTypes.any,
+  icon: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default EventsTimeline;

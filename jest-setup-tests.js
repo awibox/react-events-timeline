@@ -13,18 +13,6 @@ Enzyme.configure({ adapter: new Adapter() });
 // Define globals to cut down on imports in test files
 global.React = React;
 global.shallow = shallow;
-global.localStorage = {
-    getItem: () => false,
-    setItem: () => true,
-};
-global.document = {
-    getElementById: () => 0,
-    body: {
-        style: {
-            marginTop: 0
-        }
-    }
-};
 
 // Use fake timers for async events
 jest.useFakeTimers();

@@ -4,22 +4,28 @@ import PropTypes from 'prop-types';
 import styles from '../styles/EventsTimeline.scss';
 
 const EventsTimelineItem = (props) => {
-  const { year, title, content } = props;
+  const {
+    content, date, label, location, title,
+  } = props;
   return (
     <div className={styles.event}>
-      <div className={styles.year}>{year}</div>
+      <div className={styles.date}>{date}</div>
       <div className={styles.content}>
-        <div>{title}</div>
-        <div>{content}</div>
+        <div className={styles.itemTitle}>{title}</div>
+        <div className={styles.itemLabel}>{label}</div>
+        <div className={styles.itemLocation}>{location}</div>
+        <div className={styles.itemContent}>{content}</div>
       </div>
     </div>
   );
 };
 
 EventsTimelineItem.propTypes = {
-  year: PropTypes.string,
-  title: PropTypes.string,
   content: PropTypes.any,
+  date: PropTypes.string,
+  label: PropTypes.string,
+  location: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default EventsTimelineItem;

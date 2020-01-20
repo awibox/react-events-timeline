@@ -3,11 +3,10 @@ $blue: #0079c1;
 $green: #40bea9;
 $widthScreenMobile: 480px;
 $timelineIndent: 10px;
-$yearRadius: 50px;
+$dateRadius: 50px;
 $iconRadius: 60px;
 
 .timeline {
-  background: #f3f3f4;
   position: relative;
   &:before {
     content: '';
@@ -22,24 +21,33 @@ $iconRadius: 60px;
     .title i {
       color: $green;
     }
-    .year {
+    .date {
       background: $green;
+    }
+    .itemLabel {
+      color: $green;
     }
   }
   &.blue {
     .title i {
       color: $blue;
     }
-    .year {
+    .date {
       background: $blue;
+    }
+    .itemLabel {
+      color: $blue;
     }
   }
   &.orange {
     .title i {
       color: $orange;
     }
-    .year {
+    .date {
       background: $orange;
+    }
+    .itemLabel {
+      color: $orange;
     }
   }
 }
@@ -77,13 +85,13 @@ $iconRadius: 60px;
   flex-flow: row;
   z-index: 2;
 }
-.year {
-  width: $yearRadius;
-  min-width: $yearRadius;
-  height: $yearRadius;
-  min-height: $yearRadius;
+.date {
+  width: $dateRadius;
+  min-width: $dateRadius;
+  height: $dateRadius;
+  min-height: $dateRadius;
   text-align: center;
-  line-height: $yearRadius;
+  line-height: $dateRadius;
   background: #333;
   color: #fff;
   border-radius: 50%;
@@ -97,17 +105,41 @@ $iconRadius: 60px;
   border-radius: $timelineIndent/4;
   padding: $timelineIndent*2;
   margin-right: 0;
+  box-sizing: border-box;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
   &:before {
     content: '';
     position: absolute;
-    top: $yearRadius/3;
+    top: $dateRadius/3;
     right: 100%;
     height: 0;
     width: 0;
     border: 7px solid transparent;
     border-right: 7px solid white;
   }
+}
+.itemTitle {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.itemContent {
+  line-height: 19px;
+  font-size: 13px;
+  color: rgba(0,0,0,.6);
+  ul, ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 17px;
+  }
+}
+.itemLocation {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: rgba(0,0,0,.4);
+}
+.itemLabel {
+  font-weight: 700;
 }
 @media (max-width: $widthScreenMobile) {
   .timeline {
@@ -125,10 +157,9 @@ $iconRadius: 60px;
     }
   }
   .event {
-    flex-flow: column-reverse;
+    flex-flow: column;
     align-items: center;
     .content {
-      width: auto;
       margin: 10px 0;
       &:before {
         display: none;

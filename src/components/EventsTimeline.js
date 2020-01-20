@@ -1,5 +1,3 @@
-import React from 'react';
-
-const EventsTimeline = (props) => {};
+const EventsTimeline = () => {};
 
 export default EventsTimeline;

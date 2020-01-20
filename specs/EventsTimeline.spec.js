@@ -5,6 +5,6 @@ import EventsTimeline from '../src/components/EventsTimeline';
 describe('EventsTimeline', () => {
   it('should render correctly', () => {
     const component = shallow(<EventsTimeline />);
-    expect(component).toEqual(component);
+    expect(component).toMatchSnapshot();
   });
 });

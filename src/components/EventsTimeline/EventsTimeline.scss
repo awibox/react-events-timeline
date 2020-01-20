@@ -1,0 +1,138 @@
+$orange: #fba51a;
+$blue: #0079c1;
+$green: #40bea9;
+$widthScreenMobileLarge: 480px;
+$timelineIndent: 10px;
+$yearRadius: 50px;
+$iconRadius: 60px;
+
+.timeline {
+  background: #f3f3f4;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 34px;
+    height: 100%;
+    width: 4px;
+    background: #e7eaec;
+  }
+  &.green {
+    .title i {
+      color: $green;
+    }
+    .year {
+      background: $green;
+    }
+  }
+  &.blue {
+    .title i {
+      color: $blue;
+    }
+    .year {
+      background: $blue;
+    }
+  }
+  &.orange {
+    .title i {
+      color: $orange;
+    }
+    .year {
+      background: $orange;
+    }
+  }
+}
+.title {
+  min-height: 40px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  margin: 0 1px;
+  padding-bottom: 10px;
+  span {
+    padding: 10px 0;
+    font-size: 22px;
+    margin: 0 20px;
+  }
+}
+.icon {
+  width: $iconRadius;
+  background-color: #fff;
+  min-width: $iconRadius;
+  height: $iconRadius;
+  min-height: $iconRadius;
+  text-align: center;
+  line-height: $iconRadius;
+  font-size: 24px;
+  border-radius: 50%;
+  border: 4px solid #e7eaec;
+}
+.event {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  z-index: 2;
+}
+.year {
+  width: $yearRadius;
+  min-width: $yearRadius;
+  height: $yearRadius;
+  min-height: $yearRadius;
+  text-align: center;
+  line-height: $yearRadius;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin: $timelineIndent;
+}
+.content {
+  position: relative;
+  margin: $timelineIndent;
+  width: 100%;
+  background: white;
+  border-radius: $timelineIndent/4;
+  padding: $timelineIndent*2;
+  margin-right: 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+  &:before {
+    content: '';
+    position: absolute;
+    top: $yearRadius/3;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+  }
+}
+@media (max-width: $widthScreenMobileLarge) {
+  .timeline {
+    &:before {
+      left:50%;
+      margin-left: -2px;
+      top:50px;
+    }
+  }
+  .title {
+    text-align: center;
+    flex-flow: column;
+    span {
+      display: none;
+    }
+  }
+  .event {
+    flex-flow: column-reverse;
+    align-items: center;
+    .content {
+      width: auto;
+      margin: 10px 0;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

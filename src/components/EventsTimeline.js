@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-
-import styles from './EventsTimeline.scss';
+import EventsTimelineItem from './EventsTimelineItem';
+import styles from '../styles/EventsTimeline.scss';
 
 const EventsTimeline = (props) => {
   const { title, icon, data } = props;
@@ -17,16 +17,11 @@ const EventsTimeline = (props) => {
         }
         <span>{title}</span>
       </div>
-      {
-        data && data.map((item) => (
-          <div key={item.year} className={styles.event}>
-            <div className={styles.year}>{item.year}</div>
-            <div className={styles.content}>
-              {item.content}
-            </div>
-          </div>
-        ))
-      }
+      {data && data.map((item) => <EventsTimelineItem
+        key={item.year}
+        year={item.year}
+        title={item.title}
+        content={item.content} />)}
     </div>
   );
 };

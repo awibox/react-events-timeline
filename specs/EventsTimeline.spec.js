@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import EventsTimeline from '../src/components/EventsTimeline/EventsTimeline';
+import EventsTimeline from '../src/components/EventsTimeline';
 
 describe('EventsTimeline', () => {
   it('should render correctly', () => {

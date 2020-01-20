@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EventsTimeline should render correctly 1`] = `""`;
+exports[`EventsTimeline should render correctly 1`] = `
+<div
+  className="timeline"
+>
+  <div
+    className="title"
+  >
+    <span />
+  </div>
+</div>
+`;

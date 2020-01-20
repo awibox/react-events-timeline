@@ -1,3 +1,3 @@
-import EventsTimeline from './components/EventsTimeline/EventsTimeline';
+import EventsTimeline from './components/EventsTimeline';
 
 export default EventsTimeline;

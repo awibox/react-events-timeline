@@ -1,7 +1,7 @@
 $orange: #fba51a;
 $blue: #0079c1;
 $green: #40bea9;
-$widthScreenMobileLarge: 480px;
+$widthScreenMobile: 480px;
 $timelineIndent: 10px;
 $yearRadius: 50px;
 $iconRadius: 60px;
@@ -109,7 +109,7 @@ $iconRadius: 60px;
     border-right: 7px solid white;
   }
 }
-@media (max-width: $widthScreenMobileLarge) {
+@media (max-width: $widthScreenMobile) {
   .timeline {
     &:before {
       left:50%;

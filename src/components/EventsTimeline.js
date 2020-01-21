@@ -36,7 +36,7 @@ const EventsTimeline = (props) => {
 
 EventsTimeline.propTypes = {
   color: PropTypes.string,
-  data: PropTypes.any,
+  data: PropTypes.any.isRequired,
   icon: PropTypes.any,
   title: PropTypes.string,
 };

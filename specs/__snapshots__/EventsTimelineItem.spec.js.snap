@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventsTimeline should render correctly 1`] = `
+<div
+  className="event"
+>
+  <div
+    className="date"
+  >
+    2019
+  </div>
+  <div
+    className="content"
+  >
+    <div
+      className="itemTitle"
+    >
+      Item Title
+    </div>
+    <div
+      className="itemLabel"
+    >
+      Item Label
+    </div>
+    <div
+      className="itemLocation"
+    >
+      New York
+    </div>
+    <div
+      className="itemContent"
+    >
+      <div>
+        Test content 2.
+      </div>
+    </div>
+  </div>
+</div>
+`;

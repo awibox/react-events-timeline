@@ -21,8 +21,8 @@ const EventsTimelineItem = (props) => {
 };
 
 EventsTimelineItem.propTypes = {
-  content: PropTypes.any,
-  date: PropTypes.string,
+  content: PropTypes.any.isRequired,
+  date: PropTypes.string.isRequired,
   label: PropTypes.string,
   location: PropTypes.string,
   title: PropTypes.string,

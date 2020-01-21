@@ -7,7 +7,30 @@ exports[`EventsTimeline should render correctly 1`] = `
   <div
     className="title"
   >
-    <span />
+    <div
+      className="icon"
+    >
+      <i
+        className="fa fa-briefcase"
+      />
+    </div>
+    <span
+      className="titleText"
+    >
+      Timeline Title
+    </span>
   </div>
+  <EventsTimelineItem
+    content={
+      <div>
+        Test content.
+      </div>
+    }
+    date="01.20"
+    key="01.20"
+    label="Item Label"
+    location="San Hose"
+    title="Item Title"
+  />
 </div>
 `;

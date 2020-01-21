@@ -18,37 +18,19 @@ $iconRadius: 60px;
     background: #e7eaec;
   }
   &.green {
-    .title i {
-      color: $green;
-    }
-    .date {
-      background: $green;
-    }
-    .itemLabel {
-      color: $green;
-    }
+    .title .icon{color: $green;}
+    .date {background: $green;}
+    .itemLabel {color: $green;}
   }
   &.blue {
-    .title i {
-      color: $blue;
-    }
-    .date {
-      background: $blue;
-    }
-    .itemLabel {
-      color: $blue;
-    }
+    .title .icon {color: $blue;}
+    .date {background: $blue;}
+    .itemLabel {color: $blue;}
   }
   &.orange {
-    .title i {
-      color: $orange;
-    }
-    .date {
-      background: $orange;
-    }
-    .itemLabel {
-      color: $orange;
-    }
+    .title .icon {color: $orange;}
+    .date {background: $orange;}
+    .itemLabel {color: $orange;}
   }
 }
 .title {
@@ -60,11 +42,11 @@ $iconRadius: 60px;
   z-index: 3;
   margin: 0 1px;
   padding-bottom: 10px;
-  span {
-    padding: 10px 0;
-    font-size: 22px;
-    margin: 0 20px;
-  }
+}
+.titleText {
+  padding: 10px 0;
+  font-size: 22px;
+  margin: 0 20px;
 }
 .icon {
   width: $iconRadius;

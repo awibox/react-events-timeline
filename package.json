@@ -1,7 +1,7 @@
 {
   "name": "react-events-timeline",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "The package that will help you display your content as a vertical timeline",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -15,7 +15,9 @@
     "url": "git+https://github.com/awibox/react-events-timeline.git"
   },
   "keywords": [
-    "react-component"
+    "timeline",
+    "react-component",
+    "npm-package"
   ],
   "author": "awibox",
   "license": "MIT",

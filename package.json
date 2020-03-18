@@ -1,6 +1,6 @@
 {
   "name": "react-events-timeline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The package that will help you display your content as a vertical timeline",
   "main": "./dist/index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/awibox/react-events-timeline#readme",
   "devDependencies": {
-    "@babel/core": "^7.8.3",
+    "@babel/core": "^7.8.7",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
@@ -42,7 +42,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-react": "^7.17.0",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "jest-css-modules-transform": "^3.1.0",
     "jest-enzyme": "^7.1.2",
     "mini-css-extract-plugin": "^0.9.0",
@@ -50,8 +50,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "sass-loader": "^8.0.2",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -80,5 +80,6 @@
       "^.+\\.js$": "babel-jest",
       ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
     }
-  }
+  },
+  "exports": false
 }

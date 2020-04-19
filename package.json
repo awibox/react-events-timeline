@@ -1,6 +1,6 @@
 {
   "name": "react-events-timeline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The package that will help you display your content as a vertical timeline",
   "main": "./dist/index.js",
   "scripts": {

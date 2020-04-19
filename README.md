@@ -1,20 +1,17 @@
+<div align="center">
+
 ![react-events-timeline](https://repository-images.githubusercontent.com/235064756/defcc300-3c3d-11ea-82a7-b1f9b108305a)
 
-<p align="center">
-    <a href="https://www.npmjs.com/package/react-events-timeline">
-        <img src="https://img.shields.io/npm/v/react-events-timeline" alt="npm version">
-    </a>
-    <a href="https://travis-ci.org/awibox/react-events-timeline">
-        <img src='https://travis-ci.org/awibox/react-events-timeline.svg?branch=master' alt='Build' />
-    </a>
-    <a href='https://coveralls.io/github/awibox/react-events-timeline?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/react-events-timeline/badge.svg?branch=master' alt='Coverage Status' />
-    </a>
-    <a href="https://www.npmjs.com/package/react-events-timeline">
-        <img src="https://img.shields.io/npm/dm/react-events-timeline" alt="Downloads">
-    </a>
-    <img src="https://img.shields.io/npm/l/react-events-timeline" alt="license">
-</p>
+[![Version](https://img.shields.io/npm/v/react-events-timeline)](https://www.npmjs.com/package/react-events-timeline)
+[![Build](https://travis-ci.org/awibox/react-events-timeline.svg?branch=master)](https://travis-ci.org/awibox/react-events-timeline)
+[![Coverage](https://coveralls.io/repos/github/awibox/react-events-timeline/badge.svg?branch=master)](https://coveralls.io/github/awibox/react-events-timeline?branch=master)
+[![Minified size](https://img.shields.io/bundlephobia/min/react-events-timeline)](https://github.com/awibox/react-events-timeline/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/react-events-timeline)](https://www.npmjs.com/package/react-events-timeline)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=awibox/react-events-timeline)](https://dependabot.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/awibox/react-events-timeline/pulls)
+[![Tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
+</div>
 
 ## Table of contents
 * [Installation](#installation)
